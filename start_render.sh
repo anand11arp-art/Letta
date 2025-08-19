@@ -6,6 +6,11 @@ echo "🚀 Starting Letta AI Server on Render..."
 # Set default values if not provided
 export HOST="${HOST:-0.0.0.0}"
 export PORT="${PORT:-8283}"
+export LETTA_DIR="${LETTA_DIR:-/app/.letta}"
+
+# Ensure Letta directory exists
+echo "📁 Creating Letta directory: $LETTA_DIR"
+mkdir -p "$LETTA_DIR/logs"
 
 # Validate required environment variables
 if [ -z "$LETTA_PG_URI" ]; then
