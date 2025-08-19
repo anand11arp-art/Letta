@@ -6,7 +6,7 @@ services:
     plan: standard
     region: oregon # Change as needed
     branch: main
-    healthCheckPath: /health
+    healthCheckPath: /v1/health
     numInstances: 1
     
     envVars:
