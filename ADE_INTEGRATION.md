@@ -88,7 +88,7 @@ cors_origins = [
    - Ensure no typos in URL
 
 2. **"Authentication Failed"**:
-   - Double-check password from Render environment variables
+   - Password should be: `kumararpit1234coc`
    - Ensure password doesn't have extra spaces
 
 3. **"CORS Error"**:
