@@ -58,7 +58,8 @@ ENV VIRTUAL_ENV="/app/.venv" \
     COMPOSIO_DISABLE_VERSION_CHECK=true
 
 # Set permissions and create Letta directory
-RUN mkdir -p /app/.letta/logs && \
+RUN mkdir -p /tmp/letta/logs && \
+    chmod 777 /tmp/letta && \
     chown -R letta:letta /app
 
 # Switch to app user
