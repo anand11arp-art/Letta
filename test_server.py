@@ -6,7 +6,8 @@ Test script to verify Letta server can start and connect to Supabase
 import os
 import sys
 from letta.settings import settings
-from letta.server.db import create_db_engine
+from letta.server.db import DatabaseRegistry
+from sqlalchemy import text
 
 def test_database_connection():
     """Test the database connection with Letta settings"""
@@ -15,12 +16,13 @@ def test_database_connection():
         print(f"   Database engine: {settings.database_engine}")
         print(f"   Database URI: {settings.letta_pg_uri}")
         
-        # Create database engine
-        engine = create_db_engine()
+        # Create database registry and get engine
+        db_registry = DatabaseRegistry()
+        engine = db_registry.get_engine()
         
         # Test connection
         with engine.connect() as conn:
-            result = conn.execute("SELECT 1 as test").fetchone()
+            result = conn.execute(text("SELECT 1 as test")).fetchone()
             assert result[0] == 1
             
         print("✅ Database connection successful!")
