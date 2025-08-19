@@ -27,12 +27,9 @@ LETTA_SERVER_PASSWORD: kumararpit1234coc
 4. Note your Render URL: `https://your-app-name.onrender.com`
 
 ### **Step 2: Get Your Server Password**
-After deployment, get your server password from Render:
+Your server password is set to: **`kumararpit1234coc`**
 
-1. Go to **Render Dashboard** → Your Service
-2. Go to **Environment** tab
-3. Find `LETTA_SERVER_PASSWORD` value
-4. Copy the auto-generated password
+(This is configured in the deployment and will be consistent across deployments)
 
 ### **Step 3: Connect to ADE**
 1. Go to **https://app.letta.com/development-servers**
