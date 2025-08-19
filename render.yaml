@@ -45,7 +45,7 @@ services:
         
       # ADE (Agent Development Environment) Configuration
       - key: LETTA_SERVER_PASSWORD
-        generateValue: true
+        value: kumararpit1234coc
         
       - key: COMPOSIO_DISABLE_VERSION_CHECK
         value: true
