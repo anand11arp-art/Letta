@@ -59,7 +59,7 @@ services:
         
       # Letta Configuration
       - key: LETTA_DIR
-        value: /app/.letta
+        value: /tmp/letta
         
       # Render Configuration
       - key: RENDER
