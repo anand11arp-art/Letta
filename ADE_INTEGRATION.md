@@ -114,8 +114,8 @@ Once connected, you can use ADE to:
 
 If you redeploy your Render service:
 1. URL typically stays the same
-2. Password might regenerate - check Render environment
-3. Update password in ADE if needed
+2. Password remains: `kumararpit1234coc` (fixed password)
+3. No need to update password in ADE
 4. Connection should automatically reconnect
 
 ## 📞 **Support**
