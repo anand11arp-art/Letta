@@ -33,7 +33,7 @@ def validate_dockerfile():
         (r"--extras.*postgres.*server", "PostgreSQL and server extras"),
         (r"--secure", "Secure mode for ADE"),
         (r"/v1/health", "Health check endpoint"),
-        (r"LETTA_PG_URI", "PostgreSQL URI environment")
+        (r"LETTA_ENVIRONMENT=PRODUCTION", "Production environment")
     ]
     
     for pattern, description in required_patterns:
