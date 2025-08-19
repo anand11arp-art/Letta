@@ -24,6 +24,6 @@ if ! alembic upgrade head; then
 fi
 echo "✅ Database migrations completed successfully"
 
-# Start the Letta server
-echo "🚀 Starting Letta AI Server..."
-exec python -m letta.main server --host "$HOST" --port "$PORT"
+# Start the Letta server with secure mode for ADE integration
+echo "🚀 Starting Letta AI Server with ADE support..."
+exec python -m letta.main server --host "$HOST" --port "$PORT" --secure
