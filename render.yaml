@@ -57,6 +57,10 @@ services:
       - key: PYTHONPATH
         value: /app
         
+      # Letta Configuration
+      - key: LETTA_DIR
+        value: /app/.letta
+        
       # Render Configuration
       - key: RENDER
         value: true
