@@ -39,9 +39,13 @@ services:
       - key: LETTA_ENVIRONMENT
         value: PRODUCTION
         
-      # Security & Performance
+      # Security & Performance - Enable for ADE Integration
       - key: SECURE
-        value: false
+        value: true
+        
+      # ADE (Agent Development Environment) Configuration
+      - key: LETTA_SERVER_PASSWORD
+        generateValue: true
         
       - key: COMPOSIO_DISABLE_VERSION_CHECK
         value: true
