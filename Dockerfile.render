@@ -69,5 +69,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
 # Expose port
 EXPOSE 8283
 
-# Start command
-CMD ["python", "-m", "letta.main", "server", "--host", "0.0.0.0", "--port", "8283"]
+# Start command - Enable secure mode for ADE integration
+CMD ["python", "-m", "letta.main", "server", "--host", "0.0.0.0", "--port", "8283", "--secure"]
