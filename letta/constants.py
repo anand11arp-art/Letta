@@ -2,7 +2,9 @@ import os
 import re
 from logging import CRITICAL, DEBUG, ERROR, INFO, NOTSET, WARN, WARNING
 
-LETTA_DIR = os.path.join(os.path.expanduser("~"), ".letta")
+# Use /tmp/letta for Render deployment to avoid permission issues
+# This will be overridden by LETTA_DIR environment variable if set
+LETTA_DIR = os.getenv("LETTA_DIR", "/tmp/letta")
 LETTA_TOOL_EXECUTION_DIR = os.path.join(LETTA_DIR, "tool_execution_dir")
 
 LETTA_MODEL_ENDPOINT = "https://inference.letta.com/v1/"
