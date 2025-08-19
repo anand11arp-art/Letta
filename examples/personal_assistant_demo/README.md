@@ -131,7 +131,7 @@ letta run --preset pa_preset --persona sam_pov --human charles --stream
 🧬 Creating new agent...
 ->  🤖 Using persona profile: 'sam_pov'
 ->  🧑 Using human profile: 'basic'
-🎉 Created new agent 'DelicateGiraffe' (id=4c4e97c9-ad8e-4065-b716-838e5d6f7f7b)
+🎉 Created new agent 'DelicateGiraffe' (id=letta-db-autosetup)
 
 Hit enter to begin (will request first Letta message)
 
@@ -187,7 +187,7 @@ In the CLI:
 🧬 Creating new agent...
 ->  🤖 Using persona profile: 'sam_pov'
 ->  🧑 Using human profile: 'basic'
-🎉 Created new agent 'personalassistant' (id=8271f819-d470-435b-9689-476380aefd27)
+🎉 Created new agent 'personalassistant' (id=letta-db-autosetup)
 
 Hit enter to begin (will request first Letta message)
 
