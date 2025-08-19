@@ -54,7 +54,7 @@ ENV VIRTUAL_ENV="/app/.venv" \
     PATH="/app/.venv/bin:$PATH" \
     PYTHONPATH="/app:$PYTHONPATH" \
     LETTA_ENVIRONMENT=PRODUCTION \
-    LETTA_DIR="/app/.letta" \
+    LETTA_DIR="/tmp/letta" \
     COMPOSIO_DISABLE_VERSION_CHECK=true
 
 # Set permissions and create Letta directory
