@@ -37,7 +37,7 @@ Your server password is set to: **`kumararpit1234coc`**
 3. Enter your server details:
    ```
    Server URL: https://your-app-name.onrender.com
-   Password: <password-from-step-2>
+   Password: kumararpit1234coc
    Name: My Render Letta Server (optional)
    ```
 4. Click **"Connect"**
