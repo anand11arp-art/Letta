@@ -1,0 +1,58 @@
+services:
+  - type: web
+    name: letta-ai-server
+    env: docker
+    dockerfilePath: ./Dockerfile.render
+    plan: standard
+    region: oregon # Change as needed
+    branch: main
+    healthCheckPath: /health
+    numInstances: 1
+    
+    envVars:
+      # Database Configuration - Supabase PostgreSQL  
+      - key: LETTA_PG_URI
+        value: postgresql://postgres.ktmuahmsozaovcidguor:kumararpit1234coc@aws-1-ap-southeast-1.pooler.supabase.com:5432/postgres?sslmode=require
+      
+      - key: LETTA_PG_DB
+        value: postgres
+      
+      - key: LETTA_PG_USER  
+        value: postgres.ktmuahmsozaovcidguor
+        
+      - key: LETTA_PG_PASSWORD
+        value: kumararpit1234coc
+        
+      - key: LETTA_PG_HOST
+        value: aws-1-ap-southeast-1.pooler.supabase.com
+        
+      - key: LETTA_PG_PORT
+        value: 5432
+      
+      # Server Configuration
+      - key: HOST
+        value: 0.0.0.0
+        
+      - key: PORT
+        value: 8283
+        
+      - key: LETTA_ENVIRONMENT
+        value: PRODUCTION
+        
+      # Security & Performance
+      - key: SECURE
+        value: false
+        
+      - key: COMPOSIO_DISABLE_VERSION_CHECK
+        value: true
+        
+      - key: LETTA_DISABLE_TRACING
+        value: true
+        
+      # Python Configuration  
+      - key: PYTHONPATH
+        value: /app
+        
+      # Render Configuration
+      - key: RENDER
+        value: true
